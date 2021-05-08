@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Bedroom</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <style>
+       
+        </style>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    </head>
+    <body background="shutter.jpg" id="bg">
+        <center>
+            <h2 class="btn btn-primary head">object detection
+    
+            </h2>
+            <a href="index.html" class="btn">BACK</a>
+            <br><br><br><br>
+            <h1 id="status" class="btn btn-danger">Status
+            </h1>
+            <br>
+            <br>
+            <h1 class="btn btn-success">There are 6 big objects in the image from which cocossd model has detected 1 object</h1>
+        </center>
+        <script>
+            img="";
+            status="";
+            object=[];
+            function preload(){
+            img=loadImage
+            }
+                function setup(){
+    canvas=createCanvas(640,420);
+    canvas.center();
+    video=createCapture(VIDEO);
+    video.size(380,380);
+    video.hide();
+objectDetector=ml5.objectDetector('cocossd',modelLoaded);
+documen
+            }
+        </script>
+       
+    </body>
+</html>
